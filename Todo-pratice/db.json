@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "status": "false"
+    },
+    {
+      "title": "lets Run fast",
+      "status": false,
+      "id": 3
+    },
+    {
+      "title": "Let's walk",
+      "status": false,
+      "id": 4
+    },
+    {
+      "title": "Let's learn React/Redux",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "lets begin the work",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "lets do the work",
+      "status": false,
+      "id": 7
+    }
+  ]
+}
