@@ -1,12 +1,13 @@
 import React from "react";
 
 
-export const Secondfolder = ()=>{
+export const Secondfolder = ({AddIncome,AddBalance})=>{
 
+   
     return(
        <>
-        <button>Add income</button>
-        <button>Add Blance</button>
+        <button onClick={AddIncome} >Add income</button>
+        <button onClick={AddBalance}>Add Blance</button>
        
         </>
     )

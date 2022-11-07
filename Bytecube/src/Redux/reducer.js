@@ -1,28 +1,62 @@
-import { ADD_BLANACE, ADD_INCOME } from "./actiontypes";
+import * as types from "./actionTypes"
 
-const store = [
-    isLoading= false,
+const initialState = {
+  amount: 0,
+  balance:0,
+  isLoading: false,
+  isError: false,
+};
+
+const reducer = (oldState = initialState,action) => {
+
+  const {type,payload} = action;
+
+  switch(type){
+    case types.ADD_INCOME_REQUEST:
+      return{
+       ...oldState,
+        isLoading:true,
+        isError:false,
+      }
     
-]
+    case types.ADD_INCOME_SUCCESS:
+      return{
+        ...oldState,
+        amount:oldState.amount+payload,
+        isLoading:false,
+        isError:false,
+      }
 
- 
- const blanceReducer =(state,action)=>{
-        switch (action.type) {
-            case 'ADD_INCOME':
-                return(
-                    ...state,
-                    state:action.payload;
+    case types.ADD_INCOME_FAILURE:
+      return{
+        ...oldState,
+        isLoading:false,
+        isError:true,
+      }
 
-                )
-        
-          case 'ADD_BLANACE':
-          return (
-            ...state,
-            state:state+action.payload;
+      case types.ADD_BALANCE_REQUEST:
+        return{
+         ...oldState,
+          isLoading:true,
+          isError:false,
+        }
+      
+      case types.ADD_BALANCE_SUCCESS:
+        return{
+          ...oldState,
+          balance:oldState.balance+payload,
+          isLoading:false,
+          isError:false,
+        }
+  
+      case types.ADD_BALANCE_FAILURE:
+        return{
+          ...oldState,
+          isLoading:false,
+          isError:true,
+        }
+  }
+  return oldState;
+};
 
-          )
-    
-        default:
-            state;
-}
-}
+export { reducer };
