@@ -1,0 +1,27 @@
+{
+  "name": "qutrix-assgn",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "server":"json-server --watch db.json --port 8080",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "axios": "^1.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts":"^2.1.15",
+    "react-router-dom": "^6.4.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "vite": "^3.2.3"
+  }
+}

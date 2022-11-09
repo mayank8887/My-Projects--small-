@@ -1,0 +1,24 @@
+{
+  "Graphs": [
+    {
+      "id": 1,
+      "X_coordinates": "3",
+      "Y_coordinates": "4"
+    },
+    {
+      "X_coordinates": "1",
+      "Y_coordinates": "2",
+      "id": 2
+    },
+    {
+      "X_coordinates": "2",
+      "Y_coordinates": "3",
+      "id": 4
+    },
+    {
+      "X_coordinates": "4",
+      "Y_coordinates": "3",
+      "id": 5
+    }
+  ]
+}
