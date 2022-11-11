@@ -19,6 +19,21 @@
       "X_coordinates": "4",
       "Y_coordinates": "3",
       "id": 5
+    },
+    {
+      "X_coordinates": "3",
+      "Y_coordinates": "2",
+      "id": 6
+    },
+    {
+      "X_coordinates": "3",
+      "Y_coordinates": "1",
+      "id": 7
+    },
+    {
+      "X_coordinates": "4",
+      "Y_coordinates": "1",
+      "id": 8
     }
   ]
 }
